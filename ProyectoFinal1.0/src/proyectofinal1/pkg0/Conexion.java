@@ -14,7 +14,7 @@ public class Conexion {
 private static final String SERVIDOR="jdbc:mysql://localhost/registro";
 private static final String user="root";
 private static final String pass="";
-private static final String driver="com.mysql.jdbc.Driver";
+private static final String driver="com.mysql.cj.jdbc.Driver";
 private Connection CN;
 
   public Conexion(){

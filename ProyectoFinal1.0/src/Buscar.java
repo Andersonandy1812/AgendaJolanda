@@ -33,11 +33,11 @@ public class Buscar extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txtBuscar = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
+        radioNota = new javax.swing.JRadioButton();
+        radioFecha = new javax.swing.JRadioButton();
+        radioNombre = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -61,27 +61,30 @@ public class Buscar extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText(" FILTRAR POR:");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 31, -1, 30));
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 200, 30));
+
+        txtBuscar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        txtBuscar.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel1.add(txtBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 200, 30));
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("BUSCAR: ");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 36, -1, -1));
 
-        jRadioButton1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jRadioButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jRadioButton1.setText("NOTA");
-        jPanel1.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 30, -1, 30));
+        radioNota.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        radioNota.setForeground(new java.awt.Color(0, 0, 0));
+        radioNota.setText("NOTA");
+        jPanel1.add(radioNota, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 30, -1, 30));
 
-        jRadioButton2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jRadioButton2.setForeground(new java.awt.Color(0, 0, 0));
-        jRadioButton2.setText("FECHA");
-        jPanel1.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 31, -1, 30));
+        radioFecha.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        radioFecha.setForeground(new java.awt.Color(0, 0, 0));
+        radioFecha.setText("FECHA");
+        jPanel1.add(radioFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 31, -1, 30));
 
-        jRadioButton3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jRadioButton3.setForeground(new java.awt.Color(0, 0, 0));
-        jRadioButton3.setText("NOMBRE");
-        jPanel1.add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 30, 90, 30));
+        radioNombre.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        radioNombre.setForeground(new java.awt.Color(0, 0, 0));
+        radioNombre.setText("NOMBRE");
+        jPanel1.add(radioNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 30, 90, 30));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 700, 350));
 
@@ -92,28 +95,7 @@ public class Buscar extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Buscar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Buscar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Buscar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Buscar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
+        
         try {
             UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
         } catch (Exception ex) {
@@ -139,9 +121,9 @@ public class Buscar extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JRadioButton radioFecha;
+    private javax.swing.JRadioButton radioNombre;
+    private javax.swing.JRadioButton radioNota;
+    private javax.swing.JTextField txtBuscar;
     // End of variables declaration//GEN-END:variables
 }
