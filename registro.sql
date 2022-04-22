@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 22-08-2021 a las 15:59:58
--- Versión del servidor: 10.4.20-MariaDB
--- Versión de PHP: 8.0.9
+-- Tiempo de generación: 22-04-2022 a las 22:12:35
+-- Versión del servidor: 10.4.22-MariaDB
+-- Versión de PHP: 8.1.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -42,13 +42,8 @@ CREATE TABLE `reuniones` (
 --
 
 INSERT INTO `reuniones` (`Id`, `NombreE`, `Fecha`, `HoraInicio`, `HoraFinal`, `Lugar`, `Nota`) VALUES
-(1, '32', 'd MMM y', 'jTextField1323', 'jTextField1232', 'comboBoxChanged', '232'),
-(2, 'misas¿', 'd MMM y', '6:00 pm', '6:00 pm', 'comboBoxChanged', 'hjhjkju uyhkuy uibgyig'),
-(3, 'tu maldita creta', 'd MMM y', '6:25 am', '7:25 am', 'comboBoxChanged', 'yo soy un roco'),
-(4, 'TETEO SIN CONDON', 'MMM d, y', '11:50 AM', '11:50 PM', 'comboBoxChanged', 'KLK ROCHI'),
-(5, 'TETEO SIN CONDON', 'MMM d, y', '11:50 AM', '11:50 PM', 'comboBoxChanged', 'KLK ROCHI'),
-(6, 'Evento arreglado', '2021-08-28', '8:00 PM', '10:00 PM', 'MULTIUSO 1', 'La hora ya se arreglo'),
-(7, 'Evento arreglado', '2021-08-28', '8:00 PM', '10:00 PM', 'MULTIUSO 1', 'La hora ya se arreglo');
+(8, 'Reunion de negocios', '2022-04-23', '2:00 am', '3:00 am', 'MULTIUSO 8', 'llegar a tiempo por favor'),
+(9, 'Mesa de reunion viernes', '2022-04-23', '3:00 am', '12:00 am', 'SELECIONAR', 'reunion el viernes');
 
 --
 -- Índices para tablas volcadas
@@ -68,7 +63,7 @@ ALTER TABLE `reuniones`
 -- AUTO_INCREMENT de la tabla `reuniones`
 --
 ALTER TABLE `reuniones`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
