@@ -80,6 +80,8 @@ public class Reuniones extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
         jLabel5.setText("NOMBRE DEL EVENTO");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, -1));
+
+        NombreE1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jPanel1.add(NombreE1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 160, 40));
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
@@ -105,6 +107,8 @@ public class Reuniones extends javax.swing.JFrame {
         jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel10.setText("NOTA");
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 140, -1, -1));
+
+        Nota1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jPanel1.add(Nota1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 160, 160, 40));
 
         btnGuardar.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
